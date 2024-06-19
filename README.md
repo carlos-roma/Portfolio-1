@@ -18,6 +18,9 @@
   N/A
   
   ## Screenshot
+![hero (305)](https://github.com/carlos-roma/Portfolio-1/assets/68045584/8d728410-af50-4ff3-a2e3-77158256e89e)
+
+![aboutme (306)](https://github.com/carlos-roma/Portfolio-1/assets/68045584/07b9bb28-16b4-44c4-9604-d1d8ca8dca08)
 
   ## How to Use This Application
   undefined
