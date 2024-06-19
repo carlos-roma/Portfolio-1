@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* padding to sides */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem; /* padding to links */
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 1.5rem; /* increased font size */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem; /* padding for fixed header */
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden; /* prevents overflow */
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures image covers hero section */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* moves image behind content */
+}
+
+.hero-content {
+    max-width: 800px; /* to prevent overflow */
+    position: relative; /* ensure content above background */
+    z-index: 1; /* ensure content above background */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* increased font size */
+}
+
+.hero-content .hero-text {
+    font-size: 1.5rem; /* increased font size */
+    margin-bottom: 2rem; /* adjusted margin */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #FF5733; /* button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #FF5733;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #e94519;
+}
+
+#about-me {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #e4e4e4;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image-holder {
+    width: 30%; 
+    max-width: 200px; 
+    height: auto; 
+    margin-left: 20px; 
+    overflow: hidden; /* hide overflow */
+}
+
+.image-holder img {
+    width: 100%; /* image width */
+    height: auto; /* height auto */
+    display: block; /* display block */
+}
+
+#projects {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #e4e4e4;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(30% - 2rem); /* adjust width */
+    margin: 1rem; /* adjust margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#contact {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #e4e4e4;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
