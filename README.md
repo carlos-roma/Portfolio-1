@@ -15,7 +15,7 @@
   A simple css and html personal portfolio displaying some of the projects that i've been working on
   
   ## Installation
-  N/A
+  Runs on the browser
   
   ## Screenshot
 ![hero (305)](https://github.com/carlos-roma/Portfolio-1/assets/68045584/8d728410-af50-4ff3-a2e3-77158256e89e)
@@ -23,18 +23,17 @@
 ![aboutme (306)](https://github.com/carlos-roma/Portfolio-1/assets/68045584/07b9bb28-16b4-44c4-9604-d1d8ca8dca08)
 
   ## How to Use This Application
-  undefined
+  Just navigate the site and click the links in the page for more info
   
   ## Contributors
   Personal project
   
   ## Testing
-  N/a
+  N/A
   
   ## Deployed Application URL
-  undefined
-  
 
+  https://carlos-roma.github.io/Portfolio-1/
   
   ## Questions
   Any questions contact me [here](mailto:adrianc.rm0@gmail.com) or check [github/https://github.com/carlos-roma](https://github.com/https://github.com/carlos-roma).
