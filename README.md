@@ -20,7 +20,7 @@
   ## Screenshot
 
   ## How to Use This Application
-  undefined
+  Navigate the page and click the links un the page for more info
   
   ## Contributors
   Personal project
