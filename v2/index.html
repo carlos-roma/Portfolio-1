@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+</head>
+<body>
+    <header>
+      <nav>
+          <h2>My Portfolio</h2>
+          <div class="burger" id="burger">
+            &#9776;
+          </div>
+          <ul id="nav-links">
+              <li><a href="#about-me">About me</a></li>
+              <li><a href="#projects">My projects</a></li>
+              <li><a href="#contact">Contact me</a></li>
+            </ul>
+          </nav>
+      </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="title"></h1>
+                <p class="hero-text"></p>
+                <a href="./assets/Resume.pdf "download="Carlos_Rodriguez_Resume.pdf">
+                    <div class="button-cv">
+                      <p>Download my Resume</p>
+                    </div>
+                  </a> 
+              </div>
+            </section>
+
+        <section class="about-me"   id="about-me">
+            <div class="about-me-content">
+                <div class="about-me-text"> 
+                <h2>About Me</h2><br>
+              
+                <p>"With a background in cognitive science from Simon Fraser University, I'm a 28-year-old now based in Mexico City, transitioning into web development. 
+                  This journey brings a unique perspective shaped by my studies and experiences in different environments.My interests span AI, art, videogames, and software
+                  architecture, driving my curiosity in web development. I'm motivated by the potential to solve practical problems through code, combining analytical thinking 
+                  with creative solutions.Outside of work, I enjoy reading fiction and philosophy, doing outdoor activities, practicing weightlifting, and playing guitar. 
+                  I approach web development with the same curiosity and dedication I bring to my personal interests, always seeking to learn and improve.
+                  I'm eager to apply my skills to new challenges in web development, committed to continuous learning in this dynamic field."</p>
+                </div>
+            <div class="image-holder">
+                <img class="lego-img" src="../Portfolio/assets/Lego.png" alt="Lego Avatar">
+             </div> 
+
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="project-intro">
+              <h2>Projects</h2><br>
+              <p>Take a look at some of the projects I've worked on. Hover over the images to read brief descriptions, and click on any image to be directed to the project's repository.
+                You can find more of my projects, including collaborative projects, by checking my GitHub profile in the contact section. Also make sure to check the deployed projects, links are inside
+              the images.</p>
+          </div>
+          <div class="project-content"> 
+              <div class="project-wrapper">
+                  <div class="project-box">
+                      <a href="https://github.com/carlos-roma/tech_blog?tab=readme-ov-file" target="_blank">
+                        <img src="./assets/images/blog.png" alt="Blog">
+                        <div class="overlay">
+                            <h3>Blog</h3>
+                            <p>A full-stack web application blog built using the MVC (Model-View-Controller) architecture. 
+                                Developed with a Node.js/Express.js Handlebars.js for the frontend, the app allows developers to publish, edit, and discuss posts.
+                                Key features include user authentication, post management, commenting, and responsive design, showcasing my skills in building dynamic, data-driven
+                                web applications. To see the deployed application click <a href="https://mvc-tech-blog-c14-e548a60e466b.herokuapp.com/" target="_blank">
+                                  <u><b>HERE</b></u></a></p>
+                        </div>
+                      </a>
+                  </div>
+                  <div class="project-box">
+                    <a href="https://github.com/carlos-roma/ecomerce-backend" target="_blank">
+                        <img src="./assets/images/ecommerce.png" alt="Ecommerce">
+                        <div class="overlay">
+                            <h3>Ecommerce</h3>
+                            <p>This is an e-commerce backend API built with Express.js and MySQL using Sequelize. Developers can use it to manage their product 
+                                catalog, including categories, individual products, and associated tags. The API provides RESTful endpoints for creating, reading,
+                                updating, and deleting this data. Users can easily set up a development database with sample information and start testing the CRUD
+                                functionality right away, using tools like Postman or Insomnia.</p>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="project-box">
+                    <a href="https://github.com/carlos-roma/A_inc_db-sql-employee-tracker" target="_blank">
+                        <img src="./assets/images/database.png" alt="Database">
+                        <div class="overlay">
+                            <h3>SQL Employe Database</h3>
+                            <p>This is a command-line interface (CLI) application for managing employee data. It connects to a MySQL database using Sequelize
+                                to handle CRUD operations for departments, roles, and employees. Users can view existing records and add new ones through an 
+                                interactive menu system. The CLI provides a simple and efficient way to maintain employee information.</p>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="project-box">
+                    <a href="https://github.com/carlos-roma/Social-Network-BE" target="_blank">
+                        <img src="./assets/images/social network.png" alt="Social Network">
+                        <div class="overlay">
+                            <h3>Social Network API</h3>
+                            <p>This is a social network API built with Node.js, Express.js, and MongoDB. It allows users to create profiles, share "thoughts", 
+                                react to others' thoughts, and manage friendships. The API provides full CRUD functionality through its RESTful endpoints, which 
+                                can be easily tested and explored using a tool like Insomnia</p>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="project-box">
+                    <a href="https://github.com/carlos-roma/React-Porfolio">
+                        <img src="./assets/images/react.png" alt="React">
+                        <div class="overlay">
+                            <h3>React</h3>
+                            <p> A minimalistic personal portfolio website built with React. It features a clean, modern design focused on showcasing my work as
+                                a developer. The site includes sections highlighting my background, notable projects, skills, and a contact form. The responsive
+                                layout provides a seamless experience across devices. To see the deployed application click <a href="https://mvc-tech-blog-c14-e548a60e466b.herokuapp.com" target="_blank">
+                                <b><u>HERE</u></b></a></p>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="project-box"> 
+                    <a href="https://github.com/carlos-roma/Note_taker" target="_blank">
+                        <img src="./assets/images/take-note.png" alt="Note taker">
+                        <div class="overlay">
+                            <h3>Take Note</h3>
+                            <p>This Node.js and Express application allows users to create, save, and delete notes. The notes are stored in a 
+                                JSON file on the server, so your data persists between sessions. It's a simple but practical project that demonstrates the basics 
+                                of building a note-taking app with server-side functionality.To see the deployed application click <a href="https://notes-app-carm-ac1c2a3a2652.herokuapp.com/" target="_blank">
+                                <b><u>HERE</u></b></a></p>
+                        </div>
+                    </a>        
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="footer">
+        <div class="contact-section" id="contact">
+            <h2>Contact me</h2><br>       
+    
+            <a href="https://www.linkedin.com/in/carlos-aroma/" target="_blank">
+                <img src="./assets/images/linkedin.png" alt="linkedin icon" title="Carlos Rodriguez Linkedin profile">
+            </a>
+    
+            <a href="https://github.com/carlos-roma" target="_blank">
+                <img src="./assets/images/github.png" alt="github icon" title="Carlos Rodriguez GitHub profile">
+            </a>
+    
+            <a href="mailto:adrianc.rm0@gmail.com" target="_blank">
+                <img src="./assets/images/mail.png" alt="mail icon" title="Carlos Rodriguez email">
+            </a>
+        </div>
+    </section>
+    
+    </main>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
