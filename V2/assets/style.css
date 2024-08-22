@@ -66,7 +66,7 @@ li {
         margin: 0;
         border-radius: 3%;
     }
-    
+    /*on small-medium screen toggle active */
     ul.active {
         display: flex;
         width: 22%;
@@ -130,7 +130,7 @@ li {
     animation: blink 1s infinite step-start;
     vertical-align: bottom; 
 }
-
+/*cursor*/
 @keyframes blink {
     0%, 100% {
         opacity: 1;
@@ -151,7 +151,7 @@ li {
     transition: background-color 0.3s ease;
     font-size: 1.2rem;
 }
-
+/*general styling*/
 .about-me, .projects, .footer {
     margin: 1.5em auto; 
     width: 95%; 
@@ -263,7 +263,7 @@ li {
     font-size: 1.1rem;
     height: 100%; 
 }
-
+/*superposition over the project boxes*/
 .overlay {
     position: absolute; 
     top: 0; 
@@ -302,7 +302,7 @@ li {
     margin: 0; 
     font-size: 1.5em; 
 }
-
+/*text in the box*/
 .overlay p {
     font-size: clamp(.9rem, 1.5vw, 1.15rem); 
     line-height: 1.2em; 
