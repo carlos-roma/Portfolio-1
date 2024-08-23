@@ -346,8 +346,25 @@ a:hover {
 
 .contact-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+/*Queries for responsiveness on mobile*/
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: .9em; 
+        margin-right: 5%;
+        width:40%
+    }
+
+    .contact-section a img {
+        width: 40px; 
+        height: auto; 
+         margin: 0 10px; 
+        
+    }
+}
+    
+
 
 section {
     scroll-margin-top: 6.8rem;
