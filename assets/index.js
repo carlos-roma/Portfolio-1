@@ -50,38 +50,39 @@ document.addEventListener("DOMContentLoaded", function() {
     // Scroll-to-reveal functionality for project boxes
     const projectBoxes = document.querySelectorAll('.project-box');
 
-    const observerOptions = {
-        threshold: 0.1 // Trigger when 10% of the element is in view
-    };
+    // Check if the device is a touchscreen
+    const isTouchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed'); // Add the reveal class
-                observer.unobserve(entry.target); // Stop observing once revealed
-            }
+    if (isTouchScreen) {
+        const observerOptions = {
+            root: null, // The viewport
+            rootMargin: '-35% 0% -30% 0%', // what area of the screen is going to activate the observer, under 35 top and over 30 bottom
+            threshold: .5 //what portion of the element must be in this area to trigger the observer
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelector('.overlay').classList.add('show-overlay');
+                } else {
+                    entry.target.querySelector('.overlay').classList.remove('show-overlay');
+                }
+            });
+        }, observerOptions);
+
+        projectBoxes.forEach(box => {
+            observer.observe(box);
         });
-    };
-
-    let observer;
-
-    function initializeObserver() {
-        // Only initialize for screens within the medium and small breakpoints
-        if (window.innerWidth <= 1024) {
-            observer = new IntersectionObserver(observerCallback, observerOptions);
-            projectBoxes.forEach(box => observer.observe(box));
-        } else {
-            // If the observer is already active on a larger screen, disconnect it
-            if (observer) {
-                observer.disconnect();
-            }
-            projectBoxes.forEach(box => box.classList.remove('revealed'));
-        }
+    } else {
+        // For non-touchscreen devices, just use the hover functionality
+        projectBoxes.forEach(box => {
+            const overlay = box.querySelector('.overlay');
+            box.addEventListener('mouseenter', () => {
+                overlay.classList.add('show-overlay');
+            });
+            box.addEventListener('mouseleave', () => {
+                overlay.classList.remove('show-overlay');
+            });
+        });
     }
-
-    // Initialize the observer based on the current screen size
-    initializeObserver();
-
-    // Recheck on window resize
-    window.addEventListener('resize', initializeObserver);
 });
