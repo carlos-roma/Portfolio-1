@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (isTouchScreen) {
         const observerOptions = {
             root: null, // The viewport
-            rootMargin: '-35% 0% -40% 0%', // what area of the screen is going to activate the observer, under 35 top and over 30 bottom
+            rootMargin: '-45% 0% -30% 0%', // what area of the screen is going to activate the observer, under 45 top and over 30 bottom
             threshold: .5 //what portion of the element must be in this area to trigger the observer
         };
 
